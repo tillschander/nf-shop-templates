@@ -78,12 +78,11 @@
                 </ul>
             </div>
             <div class="col-md-8 order-md-1">
-                <h4 class="mb-3">Address</h4>
+                <h4 class="mb-3">Shipping Address</h4>
                 <form class="needs-validation" novalidate="">
                     <div class="mb-3">
                         <label for="fullName">Full name</label>
-                        <input type="text" class="form-control" id="fullName" placeholder="Jane Doe" value=""
-                            required="">
+                        <input type="text" class="form-control" name="fullName" value="">
                         <div class="invalid-feedback">
                             Valid Name is required.
                         </div>
@@ -91,7 +90,7 @@
 
                     <div class="mb-3">
                         <label for="address">Address</label>
-                        <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                        <input type="text" class="form-control" name="address">
                         <div class="invalid-feedback">
                             Please enter your shipping address.
                         </div>
@@ -100,21 +99,21 @@
                     <div class="row">
                         <div class="col-md-4 mb-4">
                             <label for="zip">Zip</label>
-                            <input type="text" class="form-control" id="zip" placeholder="12345" required="">
+                            <input type="text" class="form-control" name="zip">
                             <div class="invalid-feedback">
                                 Zip code required.
                             </div>
                         </div>
                         <div class="col-md-4 mb-4">
-                            <label for="state">State</label>
-                            <input type="text" class="form-control" id="state" placeholder="Hamburg" required="">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" name="city">
                             <div class="invalid-feedback">
-                                Please provide a valid state.
+                                Please provide a valid city.
                             </div>
                         </div>
                         <div class="col-md-4 mb-4">
                             <label for="country">Country</label>
-                            <select class="custom-select d-block w-100" id="country" required="">
+                            <select class="custom-select d-block w-100" name="country">
                                 <option value="">Choose...</option>
                                 <option>Germany</option>
                             </select>
@@ -124,33 +123,10 @@
                         </div>
                     </div>
                     <hr class="mb-4">
-
-                    <h4 class="mb-3">Payment</h4>
-                    <div class="row">
-                        <div class="col-md-6 mb-6">
-                            <label for="cc-number">Credit card number</label>
-                            <input type="text" class="form-control" id="cc-number" placeholder="1234 5678 901234" required="">
-                            <div class="invalid-feedback">
-                                Credit card number is required
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <label for="cc-expiration">Expiration</label>
-                            <input type="text" class="form-control" id="cc-expiration" placeholder="12/22" required="">
-                            <div class="invalid-feedback">
-                                Expiration date required
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <label for="cc-cvv">CVV</label>
-                            <input type="text" class="form-control" id="cc-cvv" placeholder="123" required="">
-                            <div class="invalid-feedback">
-                                Security code required
-                            </div>
-                        </div>
+                    <div class="d-flex justify-content-between">
+                        <a href="/cart" class="btn btn-light">Back</a>
+                        <button class="btn btn-primary" type="submit">Continue</button>
                     </div>
-                    <hr class="mb-4">
-                    <button class="btn btn-primary btn-lg btn-block" type="submit">Place Order</button>
                 </form>
             </div>
         </div>
